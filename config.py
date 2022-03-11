@@ -25,7 +25,7 @@ class DevelopmentConfig(Config):
     # MAIL_USE_TLS = True
     # MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     # MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    # 数据库配置
+    # 数据库配置 TODO 将Mysql地址用户名密码，修改为本机mysql服务地址
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URI') or \
                               'mysql+pymysql://root:77889911@192.168.3.205/DVIS'
     # redis 配置
